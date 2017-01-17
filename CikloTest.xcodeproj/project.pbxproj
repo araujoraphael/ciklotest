@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23C3553A724F67C9104A574C /* Pods_CikloTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639BB088CBF8BE938AD1F1C7 /* Pods_CikloTest.framework */; };
+		BD2BD8AC1E2DB5E90035C66D /* CustomCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BD8AB1E2DB5E90035C66D /* CustomCells.swift */; };
+		BD2BD8AE1E2DB60C0035C66D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2BD8AD1E2DB60C0035C66D /* MapKit.framework */; };
+		BD2BD8B21E2DC3AE0035C66D /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BD8B01E2DC3AE0035C66D /* ImagePickerController.swift */; };
+		BD2BD8B31E2DC3AE0035C66D /* ImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2BD8B11E2DC3AE0035C66D /* ImageRow.swift */; };
+		BD5A674B1E2C7B08002FD636 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5A674A1E2C7B08002FD636 /* LoginViewController.swift */; };
+		BD5A674D1E2C7D66002FD636 /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5A674C1E2C7D66002FD636 /* NewUserViewController.swift */; };
+		BD5A67511E2D9DA2002FD636 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD5A67501E2D9DA2002FD636 /* GoogleService-Info.plist */; };
+		BD5A67531E2D9F25002FD636 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5A67521E2D9F25002FD636 /* Person.swift */; };
 		BDF71D831E2C75250036A8A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF71D821E2C75250036A8A5 /* AppDelegate.swift */; };
 		BDF71D851E2C75250036A8A5 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF71D841E2C75250036A8A5 /* MasterViewController.swift */; };
 		BDF71D871E2C75250036A8A5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF71D861E2C75250036A8A5 /* DetailViewController.swift */; };
@@ -16,6 +25,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		148575E634982649AC17F280 /* Pods-CikloTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CikloTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CikloTest/Pods-CikloTest.debug.xcconfig"; sourceTree = "<group>"; };
+		639BB088CBF8BE938AD1F1C7 /* Pods_CikloTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CikloTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD2BD8AB1E2DB5E90035C66D /* CustomCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCells.swift; path = Extensions/CustomCells.swift; sourceTree = "<group>"; };
+		BD2BD8AD1E2DB60C0035C66D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BD2BD8B01E2DC3AE0035C66D /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
+		BD2BD8B11E2DC3AE0035C66D /* ImageRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRow.swift; sourceTree = "<group>"; };
+		BD5A674A1E2C7B08002FD636 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BD5A674C1E2C7D66002FD636 /* NewUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
+		BD5A67501E2D9DA2002FD636 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BD5A67521E2D9F25002FD636 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Models/Person.swift; sourceTree = "<group>"; };
 		BDF71D7F1E2C75250036A8A5 /* CikloTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CikloTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF71D821E2C75250036A8A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDF71D841E2C75250036A8A5 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +43,7 @@
 		BDF71D8B1E2C75250036A8A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDF71D8E1E2C75250036A8A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDF71D901E2C75250036A8A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB45384AD965CC521A510EFD /* Pods-CikloTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CikloTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CikloTest/Pods-CikloTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +51,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD2BD8AE1E2DB60C0035C66D /* MapKit.framework in Frameworks */,
+				23C3553A724F67C9104A574C /* Pods_CikloTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64C0EBB523C3C1922C5CED8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				148575E634982649AC17F280 /* Pods-CikloTest.debug.xcconfig */,
+				CB45384AD965CC521A510EFD /* Pods-CikloTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84B600C5FBD3B38FDD23D4F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD2BD8AD1E2DB60C0035C66D /* MapKit.framework */,
+				639BB088CBF8BE938AD1F1C7 /* Pods_CikloTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD2BD8AA1E2DB5CB0035C66D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD2BD8B01E2DC3AE0035C66D /* ImagePickerController.swift */,
+				BD2BD8B11E2DC3AE0035C66D /* ImageRow.swift */,
+				BD2BD8AB1E2DB5E90035C66D /* CustomCells.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		BD5A674E1E2C7E65002FD636 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD5A674A1E2C7B08002FD636 /* LoginViewController.swift */,
+				BD5A674C1E2C7D66002FD636 /* NewUserViewController.swift */,
+				BDF71D841E2C75250036A8A5 /* MasterViewController.swift */,
+				BDF71D861E2C75250036A8A5 /* DetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BD5A674F1E2D9D32002FD636 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD5A67521E2D9F25002FD636 /* Person.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		BDF71D761E2C75250036A8A5 = {
 			isa = PBXGroup;
 			children = (
 				BDF71D811E2C75250036A8A5 /* CikloTest */,
 				BDF71D801E2C75250036A8A5 /* Products */,
+				64C0EBB523C3C1922C5CED8E /* Pods */,
+				84B600C5FBD3B38FDD23D4F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +127,15 @@
 		BDF71D811E2C75250036A8A5 /* CikloTest */ = {
 			isa = PBXGroup;
 			children = (
+				BD2BD8AA1E2DB5CB0035C66D /* Extensions */,
+				BD5A674F1E2D9D32002FD636 /* Models */,
+				BD5A674E1E2C7E65002FD636 /* ViewControllers */,
 				BDF71D821E2C75250036A8A5 /* AppDelegate.swift */,
-				BDF71D841E2C75250036A8A5 /* MasterViewController.swift */,
-				BDF71D861E2C75250036A8A5 /* DetailViewController.swift */,
 				BDF71D881E2C75250036A8A5 /* Main.storyboard */,
 				BDF71D8B1E2C75250036A8A5 /* Assets.xcassets */,
 				BDF71D8D1E2C75250036A8A5 /* LaunchScreen.storyboard */,
 				BDF71D901E2C75250036A8A5 /* Info.plist */,
+				BD5A67501E2D9DA2002FD636 /* GoogleService-Info.plist */,
 			);
 			path = CikloTest;
 			sourceTree = "<group>";
@@ -74,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDF71D931E2C75250036A8A5 /* Build configuration list for PBXNativeTarget "CikloTest" */;
 			buildPhases = (
+				966B74937828DE1365D045B5 /* [CP] Check Pods Manifest.lock */,
 				BDF71D7B1E2C75250036A8A5 /* Sources */,
 				BDF71D7C1E2C75250036A8A5 /* Frameworks */,
 				BDF71D7D1E2C75250036A8A5 /* Resources */,
+				98CC2F27D73998DE2549E3AB /* [CP] Embed Pods Frameworks */,
+				3ABD964E00A409C6C8874427 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +175,7 @@
 				TargetAttributes = {
 					BDF71D7E1E2C75250036A8A5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MFV828C5Z2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDF71D8F1E2C75250036A8A5 /* LaunchScreen.storyboard in Resources */,
+				BD5A67511E2D9DA2002FD636 /* GoogleService-Info.plist in Resources */,
 				BDF71D8C1E2C75250036A8A5 /* Assets.xcassets in Resources */,
 				BDF71D8A1E2C75250036A8A5 /* Main.storyboard in Resources */,
 			);
@@ -134,12 +212,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3ABD964E00A409C6C8874427 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CikloTest/Pods-CikloTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		966B74937828DE1365D045B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		98CC2F27D73998DE2549E3AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CikloTest/Pods-CikloTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BDF71D7B1E2C75250036A8A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5A67531E2D9F25002FD636 /* Person.swift in Sources */,
+				BD5A674B1E2C7B08002FD636 /* LoginViewController.swift in Sources */,
 				BDF71D871E2C75250036A8A5 /* DetailViewController.swift in Sources */,
+				BD2BD8B21E2DC3AE0035C66D /* ImagePickerController.swift in Sources */,
+				BD5A674D1E2C7D66002FD636 /* NewUserViewController.swift in Sources */,
+				BD2BD8B31E2DC3AE0035C66D /* ImageRow.swift in Sources */,
+				BD2BD8AC1E2DB5E90035C66D /* CustomCells.swift in Sources */,
 				BDF71D851E2C75250036A8A5 /* MasterViewController.swift in Sources */,
 				BDF71D831E2C75250036A8A5 /* AppDelegate.swift in Sources */,
 			);
@@ -262,9 +394,12 @@
 		};
 		BDF71D941E2C75250036A8A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148575E634982649AC17F280 /* Pods-CikloTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MFV828C5Z2;
 				INFOPLIST_FILE = CikloTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.araujoraphael.CikloTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,9 +409,12 @@
 		};
 		BDF71D951E2C75250036A8A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB45384AD965CC521A510EFD /* Pods-CikloTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MFV828C5Z2;
 				INFOPLIST_FILE = CikloTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.araujoraphael.CikloTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -303,6 +441,7 @@
 				BDF71D951E2C75250036A8A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
