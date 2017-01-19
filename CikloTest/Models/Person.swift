@@ -16,7 +16,7 @@ struct Person {
     let phoneNumber: String
     let latitude: Double
     let longitude: Double
-    let picture: UIImage
+    let picture: UIImage?
     let ref: FIRDatabaseReference?
     
     init(names: String, surnames: String, age: Int, phoneNumber: String, latitude: Double = 0.0, longitude: Double = 0.0, picture: UIImage, key: String = "") {
@@ -40,7 +40,7 @@ struct Person {
         phoneNumber = snapshotValue["phoneNumber"] as! String
         latitude = snapshotValue["latitude"] as! Double
         longitude = snapshotValue["longitude"] as! Double
-        picture = snapshotValue["picture"] as! UIImage
+        picture = snapshotValue["picture"] as? UIImage
         ref = snapshot.ref
     }
     

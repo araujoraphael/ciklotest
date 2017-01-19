@@ -9,6 +9,6 @@ target 'CikloTest' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
   pod 'Eureka', '~> 2.0.0-beta.1'
-
 end

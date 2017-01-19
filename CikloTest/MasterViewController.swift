@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
-    var users = [Any]()
-
+    var people = [Person]()
+    let ref = FIRDatabase.database().reference(withPath: "people")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,22 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        
+        ref.observe(.value, with: { snapshot in
+            var newItems: [Person] = []
+            
+            // 3
+            for item in snapshot.children {
+                // 4
+                let groceryItem = Person(snapshot: item as! FIRDataSnapshot)
+                newItems.append(groceryItem)
+            }
+            
+            // 5
+            self.people = newItems
+            print(">>>> PEOPLE \(self.people)")
+            self.tableView.reloadData()
+        })
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -47,9 +64,9 @@ class MasterViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "userDetailSegue" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
-                let user = users[indexPath.row] as! NSDate
+                let user = people[indexPath.row]
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = user
+//                controller.detailItem = user
 
             }
         }
@@ -62,14 +79,14 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return users.count
+        return people.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        let object = users[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
+        let person = people[indexPath.row]
+        cell.textLabel!.text = "\(person.names) \(person.surnames)"
         return cell
     }
 
